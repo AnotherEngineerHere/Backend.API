@@ -1,0 +1,17 @@
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\bin\Release\net6.0\Backend.Infrastructure.deps.json
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\bin\Release\net6.0\Backend.Infrastructure.runtimeconfig.json
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\bin\Release\net6.0\Backend.Infrastructure.dll
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\bin\Release\net6.0\Backend.Infrastructure.pdb
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\bin\Release\net6.0\Backend.Core.dll
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\bin\Release\net6.0\Backend.Core.pdb
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\obj\Release\net6.0\Backend.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\obj\Release\net6.0\Backend.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\obj\Release\net6.0\Backend.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\obj\Release\net6.0\Backend.Infrastructure.AssemblyInfo.cs
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\obj\Release\net6.0\Backend.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\obj\Release\net6.0\Backend.Infrastructure.csproj.CopyComplete
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\obj\Release\net6.0\Backend.Infrastructure.dll
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\obj\Release\net6.0\refint\Backend.Infrastructure.dll
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\obj\Release\net6.0\Backend.Infrastructure.pdb
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\obj\Release\net6.0\Backend.Infrastructure.genruntimeconfig.cache
+C:\Users\Andres\source\repos\Backend.API\Backend.Infrastructure\obj\Release\net6.0\ref\Backend.Infrastructure.dll
