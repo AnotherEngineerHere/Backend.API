@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andres\\source\\repos\\Backend.API\\Backend.Core\\Backend.Core.csproj": {}
+    "C:\\Users\\juana\\Documents\\Repositorios\\Backend.API\\Backend.Core\\Backend.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andres\\source\\repos\\Backend.API\\Backend.Core\\Backend.Core.csproj": {
+    "C:\\Users\\juana\\Documents\\Repositorios\\Backend.API\\Backend.Core\\Backend.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andres\\source\\repos\\Backend.API\\Backend.Core\\Backend.Core.csproj",
+        "projectUniqueName": "C:\\Users\\juana\\Documents\\Repositorios\\Backend.API\\Backend.Core\\Backend.Core.csproj",
         "projectName": "Backend.Core",
-        "projectPath": "C:\\Users\\Andres\\source\\repos\\Backend.API\\Backend.Core\\Backend.Core.csproj",
-        "packagesPath": "C:\\Users\\Andres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andres\\source\\repos\\Backend.API\\Backend.Core\\obj\\",
+        "projectPath": "C:\\Users\\juana\\Documents\\Repositorios\\Backend.API\\Backend.Core\\Backend.Core.csproj",
+        "packagesPath": "C:\\Users\\juana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\juana\\Documents\\Repositorios\\Backend.API\\Backend.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Andres\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\juana\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
