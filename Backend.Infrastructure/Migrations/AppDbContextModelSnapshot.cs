@@ -57,6 +57,12 @@ namespace Backend.Infrastructure.Migrations
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("first_name");
 
+                    b.Property<string>("Rol")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("rol");
+
                     b.HasKey("UsuarioId");
 
                     b.ToTable("Usuarios", (string)null);
@@ -81,11 +87,27 @@ namespace Backend.Infrastructure.Migrations
                     b.ToTable("Clientes", (string)null);
                 });
 
+            modelBuilder.Entity("Backend.Core.Entities.Empleado", b =>
+                {
+                    b.HasBaseType("Backend.Core.Entities.Usuario");
+
+                    b.ToTable("Empleados", (string)null);
+                });
+
             modelBuilder.Entity("Backend.Core.Entities.Cliente", b =>
                 {
                     b.HasOne("Backend.Core.Entities.Usuario", null)
                         .WithOne()
                         .HasForeignKey("Backend.Core.Entities.Cliente", "UsuarioId")
+                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Backend.Core.Entities.Empleado", b =>
+                {
+                    b.HasOne("Backend.Core.Entities.Usuario", null)
+                        .WithOne()
+                        .HasForeignKey("Backend.Core.Entities.Empleado", "UsuarioId")
                         .OnDelete(DeleteBehavior.ClientCascade)
                         .IsRequired();
                 });

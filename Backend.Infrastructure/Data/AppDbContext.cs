@@ -22,8 +22,20 @@ namespace Backend.Infrastructure.Data
                 entity.Property(u => u.Nombre).HasMaxLength(100);
                 entity.Property(u => u.Apellido).HasMaxLength(100);
                 entity.Property(u => u.CorreoElectronico).HasMaxLength(100);
+                entity.Property(u => u.Rol).HasMaxLength(100);
                 entity.Property(u => u.FechaNacimiento).HasColumnType("date");
                 entity.Property(u => u.Activo);
+            });
+
+            modelBuilder.Entity<Empleado>(entity =>
+            {
+                entity.ToTable("Empleados");
+
+                // Configuración de la relación con Usuario
+                entity.HasOne<Usuario>()
+                    .WithOne()
+                    .HasForeignKey<Empleado>(c => c.UsuarioId)
+                    .IsRequired();
             });
 
             modelBuilder.Entity<Cliente>(entity =>

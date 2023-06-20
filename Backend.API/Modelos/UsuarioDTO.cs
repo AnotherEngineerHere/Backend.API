@@ -20,5 +20,8 @@ namespace Backend.API.Modelos
 
         [Required]
         public bool Activo { get; set; }
+
+        [Required]
+        public string Rol { get; set; }
     }
 }

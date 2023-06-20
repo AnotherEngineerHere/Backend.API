@@ -21,6 +21,10 @@ namespace Backend.Core.Entities
         [StringLength(100)]
         public string CorreoElectronico { get; set; }
 
+        [Column("rol")]
+        [StringLength(100)]
+        public string Rol { get; set; }
+
         [Column("date_of_birth", TypeName = "date")]
         public DateTime FechaNacimiento { get; set; }
 
