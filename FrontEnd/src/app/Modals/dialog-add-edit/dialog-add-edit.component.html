@@ -6,7 +6,7 @@
       <mat-grid-tile>
         <mat-form-field appearance="outline">
           <mat-label>Nombre</mat-label>
-          <input matInput placeholder="">
+          <input formControlName="nombre" matInput placeholder="">
         </mat-form-field>
       </mat-grid-tile>
       <mat-grid-tile>
@@ -20,6 +20,47 @@
           <mat-label>Email</mat-label>
           <input matInput formControlName="email">
         </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field appearance="outline">
+          <mat-label>Direccion</mat-label>
+          <input matInput formControlName="direccion">
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email">
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field appearance="outline">
+          <mat-label>Telefono</mat-label>
+          <input matInput formControlName="telefono">
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field>
+          <mat-label>Activo</mat-label>
+          <mat-select [formControl]="animalControl" required>
+            <mat-option>--</mat-option>
+            <mat-option *ngFor="let animal of animals" [value]="animal">
+              {{animal.name}}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="animalControl.hasError('required')">Please choose a valid option</mat-error>
+          <mat-hint formControlName="activo">{{animalControl.value}}</mat-hint>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field>
+          <mat-label>Choose a date</mat-label>
+          <input matInput [matDatepicker]="picker" formControlName="fechaDeNacimiento">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        
       </mat-grid-tile>    
     </mat-grid-list>
   </form>
@@ -27,5 +68,8 @@
 
 </div>
 <div mat-dialog-actions>
-  <button mat-button mat-dialog-close>Close</button>
+  <button mat-button mat-dialog-close color="warn">Volver</button>
+  <button mat-raised-button mat-dialog color="primary"
+  (click)="addEditCliente()"
+  >{{botonAccion}}</button>
 </div>

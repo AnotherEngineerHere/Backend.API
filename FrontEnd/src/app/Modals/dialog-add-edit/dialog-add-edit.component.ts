@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, ViewChild, OnInit} from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormControl,FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -20,13 +20,18 @@ export const MY_DATE_FORMATS = {
     monthYearA11yLabel: 'MMMM YYYY'
   },
 }
-
+interface Animal {
+  name: string;
+}
 @Component({
   selector: 'app-dialog-add-edit',
   templateUrl: './dialog-add-edit.component.html',
   styleUrls: ['./dialog-add-edit.component.css'],
+  
   providers: [
-    {provide: MAT_DATE_FORMATS,useValue: MY_DATE_FORMATS},]
+    {provide: MAT_DATE_FORMATS,useValue: MY_DATE_FORMATS},],
+    
+    
 })
 
 export class DialogAddEditComponent implements OnInit {
@@ -68,6 +73,13 @@ export class DialogAddEditComponent implements OnInit {
   ngOnInit(): void {
     
 }
+
+animalControl = new FormControl<Animal | null>(null, Validators.required);
+  selectFormControl = new FormControl('', Validators.required);
+  animals: Animal[] = [
+    {name: 'Yes'},
+    {name: 'No'},
+  ]
 
 
 }
