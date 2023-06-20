@@ -16,8 +16,8 @@ export class EmpleadoService {
   getEmpleado(id:number):Observable<Empleado> {
     return this.http.get<Empleado>('${this.apiUrl/${id}}');
   }
-  getList():Observable<Empleado> {
-    return this.http.get<Empleado>(this.apiUrl);
+  getList():Observable<Empleado[]> {
+    return this.http.get<Empleado[]>(this.apiUrl);
   }
   add(modelo:Empleado):Observable<Empleado> {
     return this.http.post<Empleado>(this.apiUrl,modelo);

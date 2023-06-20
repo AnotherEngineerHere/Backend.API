@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Backend.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230619162139_migraciones")]
+    [Migration("20230620191810_migraciones")]
     partial class migraciones
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -59,12 +59,6 @@ namespace Backend.Infrastructure.Migrations
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("first_name");
 
-                    b.Property<string>("Rol")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)")
-                        .HasColumnName("rol");
-
                     b.HasKey("UsuarioId");
 
                     b.ToTable("Usuarios", (string)null);
@@ -74,13 +68,13 @@ namespace Backend.Infrastructure.Migrations
                 {
                     b.HasBaseType("Backend.Core.Entities.Usuario");
 
-                    b.Property<string>("Dirección")
+                    b.Property<string>("Direccion")
                         .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)")
                         .HasColumnName("address");
 
-                    b.Property<string>("Teléfono")
+                    b.Property<string>("Telefono")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)")

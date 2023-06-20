@@ -8,10 +8,10 @@ namespace Backend.API.Modelos
     {
 
         [Required]
-        public string Dirección { get; set; }
+        public string Direccion { get; set; }
 
         [Required]
-        public string Teléfono { get; set; }
+        public string Telefono { get; set; }
 
 
     }

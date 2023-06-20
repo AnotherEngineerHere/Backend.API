@@ -17,7 +17,12 @@ namespace Backend.Core.Entities
 
 
         [Column("hiringDate")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         [StringLength(1000)]
         DateTime FechaDeIngreso { get; set; }
+
+        [Column("role")]
+        [StringLength(1000)]
+        string Rol { get; set; }
     }
 }

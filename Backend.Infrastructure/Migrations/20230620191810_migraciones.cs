@@ -18,7 +18,6 @@ namespace Backend.Infrastructure.Migrations
                     first_name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     last_name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    rol = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     date_of_birth = table.Column<DateTime>(type: "date", nullable: false),
                     is_active = table.Column<bool>(type: "bit", nullable: false)
                 },

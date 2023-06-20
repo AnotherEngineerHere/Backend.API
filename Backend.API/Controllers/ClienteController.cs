@@ -49,8 +49,8 @@ namespace Backend.API.Controllers
                 CorreoElectronico = clienteDTO.CorreoElectronico,
                 FechaNacimiento = clienteDTO.FechaNacimiento,
                 Activo = clienteDTO.Activo,
-                Dirección = clienteDTO.Dirección,
-                Teléfono = clienteDTO.Teléfono
+                Direccion = clienteDTO.Direccion,
+                Telefono = clienteDTO.Telefono
             };
 
             _clienteService.CreateCliente(cliente);
@@ -76,8 +76,8 @@ namespace Backend.API.Controllers
             cliente.CorreoElectronico = clienteDTO.CorreoElectronico;
             cliente.FechaNacimiento = clienteDTO.FechaNacimiento;
             cliente.Activo = clienteDTO.Activo;
-            cliente.Dirección = clienteDTO.Dirección;
-            cliente.Teléfono = clienteDTO.Teléfono;
+            cliente.Direccion = clienteDTO.Direccion;
+            cliente.Telefono = clienteDTO.Telefono;
 
             _clienteService.UpdateCliente(cliente);
             return Ok(cliente);

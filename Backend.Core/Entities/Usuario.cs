@@ -21,16 +21,11 @@ namespace Backend.Core.Entities
         [StringLength(100)]
         public string CorreoElectronico { get; set; }
 
-        [Column("rol")]
-        [StringLength(100)]
-        public string Rol { get; set; }
-
         [Column("date_of_birth", TypeName = "date")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")] 
         public DateTime FechaNacimiento { get; set; }
 
         [Column("is_active")]
         public bool Activo { get; set; }
-
-
     }
 }

@@ -16,12 +16,10 @@ namespace Backend.API.Modelos
         public string CorreoElectronico { get; set; }
 
         [Required]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime FechaNacimiento { get; set; }
 
         [Required]
         public bool Activo { get; set; }
-
-        [Required]
-        public string Rol { get; set; }
     }
 }

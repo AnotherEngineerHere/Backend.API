@@ -8,10 +8,10 @@ namespace Backend.Core.Entities
     {
         [Column("address")]
         [StringLength(1000)]
-        public string Dirección { get; set; }
+        public string Direccion { get; set; }
 
         [Column("phone_number")]
         [StringLength(100)]
-        public string Teléfono { get; set; }
+        public string Telefono { get; set; }
     }
 }

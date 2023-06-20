@@ -3,9 +3,8 @@ export interface Cliente {
     nombre: string;
     apellido: string;
     email: string;
-    fechaDeNacimiento: string;
+    fechaDeNacimiento: Date;
     activo:boolean;
-    rol:string;
     direccion:string;
     telefono:string
 }

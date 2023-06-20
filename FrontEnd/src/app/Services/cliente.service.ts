@@ -15,8 +15,8 @@ export class ClienteService {
   getCliente(id:number):Observable<Cliente> {
     return this.http.get<Cliente>('${this.apiUrl/${id}}');
   }
-  getList():Observable<Cliente> {
-    return this.http.get<Cliente>(this.apiUrl);
+  getList():Observable<Cliente[]> {
+    return this.http.get<Cliente[]>(this.apiUrl);
   }
   add(modelo:Cliente):Observable<Cliente> {
     return this.http.post<Cliente>(this.apiUrl,modelo);
