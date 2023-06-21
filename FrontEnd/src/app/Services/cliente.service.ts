@@ -13,7 +13,7 @@ export class ClienteService {
   constructor(private http:HttpClient) { }
 
   getCliente(id:number):Observable<Cliente> {
-    return this.http.get<Cliente>('${this.apiUrl/${id}}');
+    return this.http.get<Cliente>(`${this.apiUrl}/${id}`);
   }
   getList():Observable<Cliente[]> {
     return this.http.get<Cliente[]>(this.apiUrl);
@@ -21,10 +21,11 @@ export class ClienteService {
   add(modelo:Cliente):Observable<Cliente> {
     return this.http.post<Cliente>(this.apiUrl,modelo);
   }
-  update(id:number,modelo:Cliente):Observable<Cliente> {
-    return this.http.put<Cliente>('${this.apiUrl/${id}}',modelo);
+  update(id: number, modelo: Cliente): Observable<Cliente> {
+    return this.http.put<Cliente>(`${this.apiUrl}/${id}`, modelo);
   }
+  
   delete(id:number):Observable<void> {
-    return this.http.delete<void>('${this.apiUrl/${id}}');
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
 }

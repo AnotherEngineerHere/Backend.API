@@ -1,8 +1,8 @@
 export interface Cliente {
-    id: number;
+    usuarioId: number;
     nombre: string;
     apellido: string;
-    email: string;
+    correoElectronico: string;
     fechaDeNacimiento: Date;
     activo:boolean;
     direccion:string;

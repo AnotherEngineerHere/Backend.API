@@ -18,19 +18,13 @@
       <mat-grid-tile>
         <mat-form-field appearance="outline">
           <mat-label>Email</mat-label>
-          <input matInput formControlName="email">
+          <input matInput formControlName="correoElectronico">
         </mat-form-field>
       </mat-grid-tile>
       <mat-grid-tile>
         <mat-form-field appearance="outline">
           <mat-label>Direccion</mat-label>
           <input matInput formControlName="direccion">
-        </mat-form-field>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <mat-form-field appearance="outline">
-          <mat-label>Email</mat-label>
-          <input matInput formControlName="email">
         </mat-form-field>
       </mat-grid-tile>
       <mat-grid-tile>
@@ -48,13 +42,12 @@
               {{animal.name}}
             </mat-option>
           </mat-select>
-          <mat-error *ngIf="animalControl.hasError('required')">Please choose a valid option</mat-error>
-          <mat-hint formControlName="activo">{{animalControl.value}}</mat-hint>
+          <mat-error *ngIf="animalControl.hasError('required')">Escoge una opcion</mat-error>
         </mat-form-field>
       </mat-grid-tile>
       <mat-grid-tile>
         <mat-form-field>
-          <mat-label>Choose a date</mat-label>
+          <mat-label>Escoge una fecha</mat-label>
           <input matInput [matDatepicker]="picker" formControlName="fechaDeNacimiento">
           <mat-hint>MM/DD/YYYY</mat-hint>
           <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
